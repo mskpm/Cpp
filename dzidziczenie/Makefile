@@ -1,5 +1,5 @@
 CC		:= g++
-C_FLAGS := -g -std=c++11 -Wall -Wextra
+C_FLAGS := -std=c++17 -Wall -Wextra
 
 BIN		:= bin
 SRC		:= src
@@ -9,9 +9,9 @@ LIB		:= lib
 LIBRARIES	:=
 
 ifeq ($(OS),Windows_NT)
-EXECUTABLE	:= dziedzice.exe
+EXECUTABLE	:= main.exe
 else
-EXECUTABLE	:= dziedzice
+EXECUTABLE	:= main
 endif
 
 all: $(BIN)/$(EXECUTABLE)
